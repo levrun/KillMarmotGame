@@ -1,0 +1,93 @@
+README
+* GETTING STARTED
+* SETTING UP YOUR OWN NEW PROJECT
+* LICENSE
+* FALSE VIRUS WARNING IF YOU EMAIL THIS PROJECT
+
+GETTING STARTED
+
+You may need to control/right- click on the project and select Android>Fix Project Properties if you do not have API-18 installed.
+(Or try Project Properties and Select Android to set the API level used to compile the project).
+Tip: The first time you import it, you may need to clean the project or add a blank line to the manifest file to get Eclipse to recompile the project.
+
+This project displays two images. When you touch the screen the transparent hello world image moves.
+Try making small changes to this project.
+Note image dimensions should be powers of 2. For example the hello world image is 256x64
+
+Then see these starting points -
+    
+https://github.com/libgdx/libgdx/wiki
+https://github.com/libgdx/libgdx/wiki/Manual-project-setup
+https://github.com/libgdx/libgdx/wiki/The-application-framework
+https://github.com/libgdx/libgdx/wiki/A-simple-game
+
+A reminder, this project is for power-users 
+(students that are already capable programmers) 
+and is just for playful fun. There's no credit.
+
+Learning about and playing with libGDX is fun 
+-  especially if you're the kind of person that just loves to program - 
+
+But it's not relevant to learning about the Android platform so we include it 
+in this course as just a power-up bonus item.
+
+Have fun playing!
+
+Lawrence, Will and the Apps101 Adventurers.
+
+
+
+SETTING UP YOUR OWN NEW PROJECT
+Here's how to recreate a project like this one-
+
+We downloaded libgdx 'nightlies' and added gdx.jar and gdx-backend-android.jar to libs/
+Right click/Control-Click on the Project and choose Java Build Path> Libraries.
+Add these two jars to the build path. 
+
+We also added to libs/ the directories
+armeeabi/ , armeabi-v7a/ and x86/
+
+The x86 (Intel) support is new - so it may not be as robust as the ARM emulator.
+It worked for us when we tested it using this project using the x86 emulator 2.3.3
+
+It's also possible to split up your game into a platform-neutral project
+You then add additional projects to create Android / IOS / Web wrappers around your main game code.
+
+ADVANCED EXAMPLES
+
+There are some more sophisticated demos but these require a *huge* 
+git clone of the entire libgdx project 
+(From memory about ~0.5GB download, maybe more), and about 1Gb of disk space.
+
+https://github.com/libgdx/libgdx/wiki/Running-demos-%26-tests
+
+
+
+LICENSE
+The libgdx project and sample Java code is provided under the Apache 2.0 license (see LICENSE)
+The smiley is provided under the Creative Commons by-sa license - 
+ *  File:	"Yellow Happy.jpg"
+ *  Author:	Jgsho (Own work)
+ *  Source:	http://commons.wikimedia.org/wiki/File%3AYellow_Happy.jpg
+ *  License: [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
+
+The hello world is provided under the same license - 
+ *  File:	"helloworld.png"
+ *  Author:	Will Hennessey
+ *  License: [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
+
+
+
+FALSE VIRUS WARNING IF YOU EMAIL THIS PROJECT
+We exported this project as a zip file and emailed it. 
+Our email server replaced gdx.jar with gdx.txt
+and gdx-backend-android too
+and a text files had note to say that they was infected with "ExceedingInfected" virus
+
+A little digging and we find this can be because the project zip contained compressed files (the jar files)
+and our virus checker doesn't like that checking all of these compressed files - 
+http://support.microsoft.com/kb/906002
+So we emailed these jars by themselves and our email virus checker was did not find a virus in them. 
+
+Thus, we believe, this is a false positive i.e. they do not contain a virus.
+Instead the virus checker was just too lazy to check all of these compressed files inside compressed files.
