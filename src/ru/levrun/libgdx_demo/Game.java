@@ -262,6 +262,11 @@ public class Game implements ApplicationListener {
 				if (myMarmot.getRectangle()
 						.contains(touchPoint.x, touchPoint.y)) {
 					Log.d(MARMOT_GAME_TAG, "Point in rectangle!");
+                    if (pressedMarmotCell == myMarmot) {
+                        //ignore, it is already hit
+                        Log.d(MARMOT_GAME_TAG, "Dont' hit it twice");
+                        return;
+                    }
 					pressedMarmotCell = myMarmot;
 
 					if (currentMarmotCell == pressedMarmotCell) {
